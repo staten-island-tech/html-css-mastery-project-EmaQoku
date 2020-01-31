@@ -4,10 +4,33 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Luckiest Guy', cursive;
 }
 
 .cover-page {
   background-image: url("../media/chichen-itza.jpg");
-  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100rem;
+  background-position: center;
+}
+
+.welcome {
+  font-size: 9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.book {
+  font-size: 9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

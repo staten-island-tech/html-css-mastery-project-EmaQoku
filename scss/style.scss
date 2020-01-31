@@ -3,10 +3,23 @@ html{
     margin: 0;
     font-size: 62.5%;
     box-sizing: border-box;
+    font-family: 'Luckiest Guy', cursive;
+
 }
 
 .cover-page{
     background-image: url("../media/chichen-itza.jpg");
-    background-repeat: no-repeat;
-    
+    background-size: cover;
+    height: 100rem;
+    background-position: center;
+}
+.welcome{
+    font-size: 9rem;
+    display: flex;
+    justify-content: center;
+}
+.book{
+    font-size: 9rem;
+    display: flex;
+    justify-content: center;
 }
