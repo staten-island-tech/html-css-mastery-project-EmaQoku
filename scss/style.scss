@@ -12,14 +12,29 @@ html{
     background-size: cover;
     height: 100rem;
     background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
 }
 .welcome{
-    font-size: 9rem;
+    font-size: 11rem;
     display: flex;
-    justify-content: center;
+    
 }
 .book{
-    font-size: 9rem;
+    font-size: 7rem;
     display: flex;
-    justify-content: center;
+}
+.book-button{
+    display: flex;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.beach{
+    background-image: url();
 }

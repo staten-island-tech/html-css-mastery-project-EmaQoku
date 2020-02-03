@@ -12,25 +12,44 @@ html {
   background-size: cover;
   height: 100rem;
   background-position: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .welcome {
-  font-size: 9rem;
+  font-size: 11rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .book {
-  font-size: 9rem;
+  font-size: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.book-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.beach {
+  background-image: url();
 }
 /*# sourceMappingURL=style.css.map */
