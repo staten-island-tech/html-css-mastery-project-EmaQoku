@@ -4,6 +4,8 @@ html{
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: 'Luckiest Guy', cursive;
+    background-color: black;
+    border: solid 1rem black;
 
 }
 
@@ -16,7 +18,8 @@ html{
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+   border: dashed 1rem white;
+   text-align: center;
 }
 .welcome{
     font-size: 11rem;
@@ -36,5 +39,23 @@ html{
 }
 
 .beach{
-    background-image: url();
+    background-image: url("../media/beach.jpg");
+    background-size: cover;
+    height: 100rem;
+    border: dashed 1rem white;
+    align-items: center;
+}
+.beach-text{
+    font-size: 9rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.overhead-beach{
+    background-image: url("../media/overhead-beach.jpg");
+    height: 10rem;
+    width: 10rem;
+    background-size: cover;
+    display: flex;
 }
