@@ -18,7 +18,7 @@ html{
     display: flex;
     align-items: center;
     flex-direction: column;
-   border: dashed 1rem white;
+   border: solid 1rem white;
    text-align: center;
 }
 .welcome{
@@ -42,8 +42,9 @@ html{
     background-image: url("../media/beach.jpg");
     background-size: cover;
     height: 100rem;
-    border: dashed 1rem white;
+    border: solid 1rem white;
     align-items: center;
+    
 }
 .beach-text{
     font-size: 9rem;
@@ -51,11 +52,115 @@ html{
     display: flex;
     justify-content: center;
     text-align: center;
+    
 }
 .overhead-beach{
     background-image: url("../media/overhead-beach.jpg");
-    height: 10rem;
-    width: 10rem;
+    height: 40rem;
+    width: 40rem;
     background-size: cover;
     display: flex;
+    border: groove 2rem white;
+}
+.shoreline{
+    background-image: url("../media/shoreline.jpg");
+    height: 40rem;
+    width: 40rem;
+    background-size: cover;
+    display: flex;
+    border: groove 2rem white ;
+}
+.two-beach-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.card{
+    perspective: 150rem;
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-side{
+    height: 40rem;
+    width: 40rem;
+    font-size: 15px;
+    color: white;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+}
+.card-side-front{
+    background-image: url("../media/overhead-beach.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 1s;
+    border: groove 2rem white;
+}
+.card-side-back{
+    background-color:black;
+    font-size: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transform: rotateY(-180deg);
+    transition: all 1s;
+    border: groove 2rem white;
+}
+.card:hover .card-side-front{
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-side-back{
+    transform: rotateY(0deg);
+}
+
+.card2{
+    perspective: 150rem;
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-side2{
+    height: 40rem;
+    width: 40rem;
+    font-size: 15px;
+    color: white;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+}
+.card-side-front2{
+    background-image: url("../media/overhead-beach.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 1s;
+    border: groove 2rem white;
+}
+.card-side-back2{
+    background-color:black;
+    font-size: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transform: rotateY(-180deg);
+    transition: all 1s;
+    border: groove 2rem white;
+}
+.card:hover .card-side-front2{
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-side-back2{
+    transform: rotateY(0deg);
 }

@@ -25,7 +25,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: dashed 1rem white;
+  border: solid 1rem white;
   text-align: center;
 }
 
@@ -57,7 +57,7 @@ html {
   background-image: url("../media/beach.jpg");
   background-size: cover;
   height: 100rem;
-  border: dashed 1rem white;
+  border: solid 1rem white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -77,11 +77,147 @@ html {
 
 .overhead-beach {
   background-image: url("../media/overhead-beach.jpg");
-  height: 10rem;
-  width: 10rem;
+  height: 40rem;
+  width: 40rem;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: groove 2rem white;
+}
+
+.shoreline {
+  background-image: url("../media/shoreline.jpg");
+  height: 40rem;
+  width: 40rem;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: groove 2rem white;
+}
+
+.two-beach-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card {
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  position: relative;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-side {
+  height: 40rem;
+  width: 40rem;
+  font-size: 15px;
+  color: white;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card-side-front {
+  background-image: url("../media/overhead-beach.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border: groove 2rem white;
+}
+
+.card-side-back {
+  background-color: black;
+  font-size: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border: groove 2rem white;
+}
+
+.card:hover .card-side-front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card:hover .card-side-back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.card2 {
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  position: relative;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-side2 {
+  height: 40rem;
+  width: 40rem;
+  font-size: 15px;
+  color: white;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card-side-front2 {
+  background-image: url("../media/overhead-beach.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border: groove 2rem white;
+}
+
+.card-side-back2 {
+  background-color: black;
+  font-size: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border: groove 2rem white;
+}
+
+.card:hover .card-side-front2 {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card:hover .card-side-back2 {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 /*# sourceMappingURL=style.css.map */
