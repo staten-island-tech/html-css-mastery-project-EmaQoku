@@ -75,29 +75,7 @@ html {
   text-align: center;
 }
 
-.overhead-beach {
-  background-image: url("../media/overhead-beach.jpg");
-  height: 40rem;
-  width: 40rem;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: groove 2rem white;
-}
-
-.shoreline {
-  background-image: url("../media/shoreline.jpg");
-  height: 40rem;
-  width: 40rem;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: groove 2rem white;
-}
-
-.two-beach-images {
+.two-beach-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,7 +164,7 @@ html {
 }
 
 .card-side-front2 {
-  background-image: url("../media/overhead-beach.jpg");
+  background-image: url("../media/shoreline.jpg");
   background-size: cover;
   position: absolute;
   top: 0;
@@ -211,12 +189,12 @@ html {
   border: groove 2rem white;
 }
 
-.card:hover .card-side-front2 {
+.card2:hover .card-side-front2 {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
 }
 
-.card:hover .card-side-back2 {
+.card2:hover .card-side-back2 {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
 }
