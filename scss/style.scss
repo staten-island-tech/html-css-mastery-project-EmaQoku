@@ -1,3 +1,4 @@
+@import "_variables.scss";
 html{
     padding: 0;
     margin: 0;
@@ -24,6 +25,9 @@ html{
 .welcome{
     font-size: 11rem;
     display: flex;
+    @include phone{
+        font-size: 5rem;
+    }
     
 }
 .book{
@@ -52,7 +56,9 @@ html{
     display: flex;
     justify-content: center;
     text-align: center;
-    
+    @include phone{
+        font-size: 5rem;
+    }
 }
 
 .two-beach-cards{
@@ -60,6 +66,10 @@ html{
     flex-direction: row;
     justify-content: space-around;
     
+    @include phone{
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 .card{
@@ -69,14 +79,27 @@ html{
     margin-left: auto;
     margin-right: auto;
     width: 50rem;
+  
 }
 .card-side{
     height: 40rem;
     width: 40rem;
-    font-size: 15px;
+    font-size: 3rem;
     color: white;
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+    @include tablet {
+        height: 30rem;
+        width: 30rem;
+        font-size: 2rem;
+
+     }
+ 
+     @include phone{
+         height: 20rem;
+         width: 20rem;
+    
+     }
 }
 .card-side-front{
     background-image: url("../media/overhead-beach.jpg");
@@ -87,6 +110,7 @@ html{
     z-index: 1;
     transition: all 1s;
     border: groove 2rem white;
+    
 }
 .card-side-back{
     background-color:black;

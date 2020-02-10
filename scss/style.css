@@ -36,6 +36,12 @@ html {
   display: flex;
 }
 
+@media (max-width: 450px) {
+  .welcome {
+    font-size: 5rem;
+  }
+}
+
 .book {
   font-size: 7rem;
   display: -webkit-box;
@@ -75,6 +81,12 @@ html {
   text-align: center;
 }
 
+@media (max-width: 450px) {
+  .beach-text {
+    font-size: 5rem;
+  }
+}
+
 .two-beach-cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,6 +97,18 @@ html {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media (max-width: 450px) {
+  .two-beach-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .card {
@@ -100,12 +124,27 @@ html {
 .card-side {
   height: 40rem;
   width: 40rem;
-  font-size: 15px;
+  font-size: 3rem;
   color: white;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .card-side {
+    height: 30rem;
+    width: 30rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .card-side {
+    height: 20rem;
+    width: 20rem;
+  }
 }
 
 .card-side-front {
