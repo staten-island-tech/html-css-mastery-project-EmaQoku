@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $phone: 450px;
 $tablet: 768px;
 
@@ -17,3 +18,32 @@ $tablet: 768px;
         @content;
     }
     }
+=======
+$laptop: 900px;
+$tablet: 768px;
+$phone: 450px;
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+@mixin laptop{
+    @media(max-width:#{$laptop}){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media(max-width:#{$tablet}){
+        @content;
+    }
+}
+
+@mixin phone{
+    @media(max-width:#{$phone}){
+        @content;
+    }
+}
+
+
+>>>>>>> 1a206e24d432a68bbdf3d0b84465b531d8636999
