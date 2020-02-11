@@ -1,0 +1,19 @@
+$phone: 450px;
+$tablet: 768px;
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+
+}
+
+@mixin tablet{
+@media(max-width: #{$tablet}){
+    @content;
+}
+}
+
+@mixin phone{
+    @media(max-width: #{$phone}){
+        @content;
+    }
+    }
