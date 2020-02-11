@@ -48,6 +48,7 @@ html{
     height: 100rem;
     border: solid 1rem white;
     align-items: center;
+  
     
 }
 .beach-text{
@@ -69,6 +70,7 @@ html{
     @include phone{
         flex-direction: column;
         justify-content: space-between;
+        height: 35rem;
     }
 }
 
@@ -91,13 +93,12 @@ html{
     @include tablet {
         height: 30rem;
         width: 30rem;
-        font-size: 2rem;
 
      }
  
      @include phone{
-         height: 20rem;
-         width: 20rem;
+         height: 25rem;
+         width: 25rem;
     
      }
 }
@@ -110,6 +111,7 @@ html{
     z-index: 1;
     transition: all 1s;
     border: groove 2rem white;
+
     
 }
 .card-side-back{
@@ -122,6 +124,13 @@ html{
     transform: rotateY(-180deg);
     transition: all 1s;
     border: groove 2rem white;
+
+    @include phone{
+        font-size: 2rem;
+    }
+    @include tablet{
+        font-size: 4rem;
+    }
 }
 .card:hover .card-side-front{
     transform: rotateY(-180deg);
@@ -167,6 +176,12 @@ html{
     transform: rotateY(-180deg);
     transition: all 1s;
     border: groove 2rem white;
+    @include phone{
+        font-size: 2rem;
+    }
+    @include tablet{
+        font-size: 4rem;
+    }
 }
 .card2:hover .card-side-front2{
     transform: rotateY(-180deg);

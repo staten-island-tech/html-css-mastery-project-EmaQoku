@@ -108,6 +108,7 @@ html {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    height: 35rem;
   }
 }
 
@@ -136,14 +137,13 @@ html {
   .card-side {
     height: 30rem;
     width: 30rem;
-    font-size: 2rem;
   }
 }
 
 @media (max-width: 450px) {
   .card-side {
-    height: 20rem;
-    width: 20rem;
+    height: 25rem;
+    width: 25rem;
   }
 }
 
@@ -171,6 +171,18 @@ html {
   -webkit-transition: all 1s;
   transition: all 1s;
   border: groove 2rem white;
+}
+
+@media (max-width: 450px) {
+  .card-side-back {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-side-back {
+    font-size: 4rem;
+  }
 }
 
 .card:hover .card-side-front {
@@ -228,6 +240,18 @@ html {
   -webkit-transition: all 1s;
   transition: all 1s;
   border: groove 2rem white;
+}
+
+@media (max-width: 450px) {
+  .card-side-back2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-side-back2 {
+    font-size: 4rem;
+  }
 }
 
 .card2:hover .card-side-front2 {
