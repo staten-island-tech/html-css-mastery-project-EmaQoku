@@ -263,4 +263,27 @@ html {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
 }
+
+.city {
+  background-image: url("../media/city.jpg");
+  height: 100rem;
+  background-size: cover;
+  background-position: center;
+  border: solid 1rem white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.city-life {
+  font-size: 9rem;
+  color: white;
+}
+
+.city-text {
+  font-size: 7rem;
+}
 /*# sourceMappingURL=style.css.map */

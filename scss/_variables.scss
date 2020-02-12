@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-$phone: 450px;
-$tablet: 768px;
-
-@function color($color-name) {
-    @return map-get($colors, $color-name);
-
-}
-
-@mixin tablet{
-@media(max-width: #{$tablet}){
-    @content;
-}
-}
-
-@mixin phone{
-    @media(max-width: #{$phone}){
-        @content;
-    }
-    }
-=======
 $laptop: 900px;
 $tablet: 768px;
 $phone: 450px;
@@ -44,6 +23,3 @@ $phone: 450px;
         @content;
     }
 }
-
-
->>>>>>> 1a206e24d432a68bbdf3d0b84465b531d8636999
