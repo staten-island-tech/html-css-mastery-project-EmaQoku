@@ -53,7 +53,7 @@ html{
     
 }
 .beach-text{
-    font-size: 9rem;
+    font-size: 11rem;
     color: white;
     display: flex;
     justify-content: center;
@@ -199,14 +199,20 @@ html{
     background-position: center;
     border: solid 1rem white;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
 }
 .city-life{
-    font-size: 9rem;
+    font-size: 11rem;
     color: white;
 }
 
 .city-text{
-    font-size: 7rem;
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    width: 150rem;
 }
