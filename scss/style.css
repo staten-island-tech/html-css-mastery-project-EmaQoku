@@ -287,12 +287,28 @@ html {
   color: white;
 }
 
+@media (max-width: 450px) {
+  .city-life {
+    margin: 0;
+    font-size: 5rem;
+  }
+}
+
 .city-text {
   font-size: 5rem;
   color: white;
   background-color: black;
   width: 90rem;
   margin: 0;
+}
+
+@media (max-width: 450px) {
+  .city-text {
+    width: 30rem;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: .2rem black;
+  }
 }
 
 .overhead-city {
@@ -302,6 +318,13 @@ html {
   background-size: cover;
 }
 
+@media (max-width: 450px) {
+  .overhead-city {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
 .city-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,5 +332,25 @@ html {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 150rem;
+}
+
+@media (max-width: 450px) {
+  .city-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100rem;
+    width: 40rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

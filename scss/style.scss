@@ -206,6 +206,11 @@ html{
 .city-life{
     font-size: 11rem;
     color: white;
+    @include phone{
+    margin: 0;
+    font-size: 5rem;
+    
+    }
 }
 
 .city-text{
@@ -214,17 +219,37 @@ html{
     background-color: black;
     width: 90rem;
     margin: 0;
+    @include phone{
+        width: 30rem;
+        font-size: 2.5rem;
+        background-color: rgba(0,0,0,0);
+        -webkit-text-stroke: .2rem black;
+    }
+    @include tablet{
+       
+    }
 }
 
 .overhead-city{
     background-image: url("../media/overhead-city.jpg");height: 40rem;
     width: 40rem;
     background-size: cover;
+    @include phone{
+        width: 20rem;
+        height: 20rem;
+    }
 }
 
 .city-content{
     display: flex;
     justify-content:space-around;
     width: 150rem;
-   
+   @include phone{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+       height: 100rem;
+       width: 40rem;
+   }
 }
