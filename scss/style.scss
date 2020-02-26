@@ -8,6 +8,9 @@ html{
     font-family: 'Luckiest Guy', cursive;
     background-color: black;
     border: solid 1rem black;
+    @include phone{
+        border: none;
+    }
 
 }
 
@@ -22,9 +25,10 @@ html{
     flex-direction: column;
    border: solid 1rem white;
    text-align: center;
+   -webkit-text-stroke: black .5rem;
 }
 .welcome{
-    font-size: 11rem;
+    font-size: 12rem;
     display: flex;
     @include phone{
         font-size: 5rem;
@@ -32,7 +36,7 @@ html{
     
 }
 .book{
-    font-size: 7rem;
+    font-size: 8rem;
     display: flex;
 }
 .book-button{
@@ -48,16 +52,17 @@ html{
     background-size: cover;
     height: 100rem;
     border: solid 1rem white;
-    align-items: center;
-  
+    align-content: center;
+   
     
 }
 .beach-text{
-    font-size: 11rem;
+    font-size: 12rem;
     color: white;
     display: flex;
     justify-content: center;
     text-align: center;
+    -webkit-text-stroke: black .5rem;
     @include phone{
         font-size: 5rem;
     }
@@ -67,10 +72,9 @@ html{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
     @include phone{
         flex-direction: column;
-        justify-content: space-between;
+        justify-content:space-between ;
         height: 35rem;
     }
 }
@@ -201,11 +205,11 @@ html{
     display: flex;
     align-items: center;
     flex-direction: column;
-    
 }
 .city-life{
-    font-size: 11rem;
+    font-size: 12rem;
     color: white;
+    -webkit-text-stroke: black .5rem;
     @include phone{
     margin: 0;
     font-size: 5rem;
@@ -220,10 +224,10 @@ html{
     width: 90rem;
     margin: 0;
     @include phone{
-        width: 30rem;
+        width: 33rem;
         font-size: 2.5rem;
-        background-color: rgba(0,0,0,0);
-        -webkit-text-stroke: .2rem black;
+       text-align: center;
+       
     }
     @include tablet{
        
@@ -231,12 +235,12 @@ html{
 }
 
 .overhead-city{
-    background-image: url("../media/overhead-city.jpg");height: 40rem;
-    width: 40rem;
+    background-image: url("../media/overhead-city.jpg");height: 61rem;
+    width: 50rem;
     background-size: cover;
     @include phone{
-        width: 20rem;
-        height: 20rem;
+        width: 25rem;
+        height: 30rem;
     }
 }
 
@@ -252,4 +256,26 @@ html{
        height: 100rem;
        width: 40rem;
    }
+}
+
+.streets{
+    background-image: url("../media/streets.jpg");
+    height: 100rem;
+    background-size: cover;
+    background-position: center;
+    border: solid 1rem white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    -webkit-text-stroke: black .5rem;
+}
+
+.places-to-visit{
+    font-size: 12rem;
+    color: white;
+    @include phone{
+    margin: 0;
+    font-size: 5rem;
+    
+    }
 }

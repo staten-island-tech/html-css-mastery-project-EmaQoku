@@ -9,6 +9,12 @@ html {
   border: solid 1rem black;
 }
 
+@media (max-width: 450px) {
+  html {
+    border: none;
+  }
+}
+
 .cover-page {
   background-image: url("../media/chichen-itza.jpg");
   background-size: cover;
@@ -27,10 +33,11 @@ html {
           flex-direction: column;
   border: solid 1rem white;
   text-align: center;
+  -webkit-text-stroke: black .5rem;
 }
 
 .welcome {
-  font-size: 11rem;
+  font-size: 12rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +50,7 @@ html {
 }
 
 .book {
-  font-size: 7rem;
+  font-size: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,13 +71,12 @@ html {
   background-size: cover;
   height: 100rem;
   border: solid 1rem white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .beach-text {
-  font-size: 11rem;
+  font-size: 12rem;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,6 +85,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  -webkit-text-stroke: black .5rem;
 }
 
 @media (max-width: 450px) {
@@ -283,8 +290,9 @@ html {
 }
 
 .city-life {
-  font-size: 11rem;
+  font-size: 12rem;
   color: white;
+  -webkit-text-stroke: black .5rem;
 }
 
 @media (max-width: 450px) {
@@ -304,24 +312,23 @@ html {
 
 @media (max-width: 450px) {
   .city-text {
-    width: 30rem;
+    width: 33rem;
     font-size: 2.5rem;
-    background-color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: .2rem black;
+    text-align: center;
   }
 }
 
 .overhead-city {
   background-image: url("../media/overhead-city.jpg");
-  height: 40rem;
-  width: 40rem;
+  height: 61rem;
+  width: 50rem;
   background-size: cover;
 }
 
 @media (max-width: 450px) {
   .overhead-city {
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 30rem;
   }
 }
 
@@ -351,6 +358,37 @@ html {
             align-items: center;
     height: 100rem;
     width: 40rem;
+  }
+}
+
+.streets {
+  background-image: url("../media/streets.jpg");
+  height: 100rem;
+  background-size: cover;
+  background-position: center;
+  border: solid 1rem white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-text-stroke: black .5rem;
+}
+
+.places-to-visit {
+  font-size: 12rem;
+  color: white;
+}
+
+@media (max-width: 450px) {
+  .places-to-visit {
+    margin: 0;
+    font-size: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
