@@ -1,0 +1,150 @@
+@import "./variables";
+
+.beach{
+    background-image: url("../media/beach.jpg");
+    background-size: cover;
+    height: 100rem;
+    border: solid 1rem white;
+    align-content: center;
+   
+    
+}
+.beach-text{
+    font-size: 12rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    -webkit-text-stroke: black .5rem;
+    @include phone{
+        font-size: 5rem;
+    }
+}
+
+.two-beach-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @include phone{
+        flex-direction: column;
+        justify-content:space-between ;
+        height: 35rem;
+    }
+}
+
+.card{
+    perspective: 150rem;
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50rem;
+  
+}
+.card-side{
+    height: 40rem;
+    width: 40rem;
+    font-size: 3rem;
+    color: white;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+    @include tablet {
+        height: 30rem;
+        width: 30rem;
+
+     }
+ 
+     @include phone{
+         height: 25rem;
+         width: 25rem;
+    
+     }
+}
+.card-side-front{
+    background-image: url("../media/overhead-beach.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 1s;
+    border: groove 2rem white;
+
+    
+}
+.card-side-back{
+    background-color:black;
+    font-size: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transform: rotateY(-180deg);
+    transition: all 1s;
+    border: groove 2rem white;
+
+    @include phone{
+        font-size: 2rem;
+    }
+    @include tablet{
+        font-size: 4rem;
+    }
+}
+.card:hover .card-side-front{
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-side-back{
+    transform: rotateY(0deg);
+}
+
+.card2{
+    perspective: 150rem;
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50rem;
+}
+.card-side2{
+    height: 40rem;
+    width: 40rem;
+    font-size: 15px;
+    color: white;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+}
+.card-side-front2{
+    background-image: url("../media/shoreline.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 1s;
+    border: groove 2rem white;
+}
+.card-side-back2{
+    background-color:black;
+    font-size: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transform: rotateY(-180deg);
+    transition: all 1s;
+    border: groove 2rem white;
+    @include phone{
+        font-size: 2rem;
+    }
+    @include tablet{
+        font-size: 4rem;
+    }
+}
+.card2:hover .card-side-front2{
+    transform: rotateY(-180deg);
+}
+
+.card2:hover .card-side-back2{
+    transform: rotateY(0deg);
+} 

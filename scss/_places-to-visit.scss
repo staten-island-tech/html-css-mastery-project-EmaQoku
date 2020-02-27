@@ -1,0 +1,25 @@
+@import "./variables";
+
+.places-to-visit{
+    font-size: 12rem;
+    color: white;
+    @include phone{
+    margin: 0;
+    font-size: 5rem;
+    
+    }
+}
+.cancun{
+    background-image: url("../media/cancun.jpg");
+    background-size: cover;
+    height: 20rem;
+    width: 20rem;
+}
+
+.top-half-chichen-itza{
+    background-image: url("../media/top-half-chichen-itza.jpg");
+    background-size: cover;
+    height: 20rem;
+    width: 20rem;
+}
+

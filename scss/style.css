@@ -1,20 +1,3 @@
-html {
-  padding: 0;
-  margin: 0;
-  font-size: 62.5%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Luckiest Guy', cursive;
-  background-color: black;
-  border: solid 1rem black;
-}
-
-@media (max-width: 450px) {
-  html {
-    border: none;
-  }
-}
-
 .cover-page {
   background-image: url("../media/chichen-itza.jpg");
   background-size: cover;
@@ -271,6 +254,49 @@ html {
           transform: rotateY(0deg);
 }
 
+.places-to-visit {
+  font-size: 12rem;
+  color: white;
+}
+
+@media (max-width: 450px) {
+  .places-to-visit {
+    margin: 0;
+    font-size: 5rem;
+  }
+}
+
+.cancun {
+  background-image: url("../media/cancun.jpg");
+  background-size: cover;
+  height: 20rem;
+  width: 20rem;
+}
+
+.top-half-chichen-itza {
+  background-image: url("../media/top-half-chichen-itza.jpg");
+  background-size: cover;
+  height: 20rem;
+  width: 20rem;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Luckiest Guy', cursive;
+  background-color: black;
+  border: solid 1rem black;
+}
+
+@media (max-width: 450px) {
+  html {
+    border: none;
+  }
+}
+
 .city {
   background-image: url("../media/city.jpg");
   height: 100rem;
@@ -390,5 +416,19 @@ html {
     margin: 0;
     font-size: 5rem;
   }
+}
+
+.cancun {
+  background-image: url("../media/cancun.jpg");
+  background-size: cover;
+  height: 20rem;
+  width: 20rem;
+}
+
+.top-half-chichen-itza {
+  background-image: url("../media/top-half-chichen-itza.jpg");
+  background-size: cover;
+  height: 20rem;
+  width: 20rem;
 }
 /*# sourceMappingURL=style.css.map */
