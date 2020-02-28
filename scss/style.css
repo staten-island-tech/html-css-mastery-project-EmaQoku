@@ -52,6 +52,7 @@
 .beach {
   background-image: url("../media/beach.jpg");
   background-size: cover;
+  background-position: center;
   height: 100rem;
   border: solid 1rem white;
   -ms-flex-line-pack: center;
@@ -140,6 +141,7 @@
 .card-side-front {
   background-image: url("../media/overhead-beach.jpg");
   background-size: cover;
+  background-position: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -209,6 +211,7 @@
 .card-side-front2 {
   background-image: url("../media/shoreline.jpg");
   background-size: cover;
+  background-position: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -254,49 +257,6 @@
           transform: rotateY(0deg);
 }
 
-.places-to-visit {
-  font-size: 12rem;
-  color: white;
-}
-
-@media (max-width: 450px) {
-  .places-to-visit {
-    margin: 0;
-    font-size: 5rem;
-  }
-}
-
-.cancun {
-  background-image: url("../media/cancun.jpg");
-  background-size: cover;
-  height: 20rem;
-  width: 20rem;
-}
-
-.top-half-chichen-itza {
-  background-image: url("../media/top-half-chichen-itza.jpg");
-  background-size: cover;
-  height: 20rem;
-  width: 20rem;
-}
-
-html {
-  padding: 0;
-  margin: 0;
-  font-size: 62.5%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Luckiest Guy', cursive;
-  background-color: black;
-  border: solid 1rem black;
-}
-
-@media (max-width: 450px) {
-  html {
-    border: none;
-  }
-}
-
 .city {
   background-image: url("../media/city.jpg");
   height: 100rem;
@@ -319,6 +279,7 @@ html {
   font-size: 12rem;
   color: white;
   -webkit-text-stroke: black .5rem;
+  margin: 5rem;
 }
 
 @media (max-width: 450px) {
@@ -418,17 +379,65 @@ html {
   }
 }
 
+.four-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 175rem;
+}
+
 .cancun {
   background-image: url("../media/cancun.jpg");
   background-size: cover;
-  height: 20rem;
-  width: 20rem;
+  background-position: center;
+  height: 50rem;
+  width: 40rem;
 }
 
 .top-half-chichen-itza {
   background-image: url("../media/top-half-chichen-itza.jpg");
   background-size: cover;
-  height: 20rem;
-  width: 20rem;
+  background-position: center;
+  height: 50rem;
+  width: 40rem;
+}
+
+.mexico-city {
+  background-image: url("../media/mexico-city.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+  width: 40rem;
+}
+
+.playa-del-carmen {
+  background-image: url("../media/playa-del-carmen.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+  width: 40rem;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Luckiest Guy', cursive;
+  background-color: black;
+  border: solid 1rem black;
+}
+
+@media (max-width: 450px) {
+  html {
+    border: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

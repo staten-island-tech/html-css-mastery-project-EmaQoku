@@ -2,7 +2,7 @@
 @import "./cover";
 @import "./beach";
 @import "./city-life";
-@import "./places-to-visit";
+@import "./streets";
 
 html{
     padding: 0;
@@ -16,106 +16,5 @@ html{
         border: none;
     }
 
-}
-
-
-
-
-
-.city{
-    background-image: url("../media/city.jpg");
-    height: 100rem;
-    background-size: cover;
-    background-position: center;
-    border: solid 1rem white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.city-life{
-    font-size: 12rem;
-    color: white;
-    -webkit-text-stroke: black .5rem;
-    @include phone{
-    margin: 0;
-    font-size: 5rem;
-    
-    }
-}
-
-.city-text{
-    font-size: 5rem;
-    color: white;
-    background-color: black;
-    width: 90rem;
-    margin: 0;
-    @include phone{
-        width: 33rem;
-        font-size: 2.5rem;
-       text-align: center;
-       
-    }
-    @include tablet{
-       
-    }
-}
-
-.overhead-city{
-    background-image: url("../media/overhead-city.jpg");height: 61rem;
-    width: 50rem;
-    background-size: cover;
-    @include phone{
-        width: 25rem;
-        height: 30rem;
-    }
-}
-
-.city-content{
-    display: flex;
-    justify-content:space-around;
-    width: 150rem;
-   @include phone{
-       display: flex;
-       flex-direction: column;
-       justify-content: space-evenly;
-       align-items: center;
-       height: 100rem;
-       width: 40rem;
-   }
-}
-
-.streets{
-    background-image: url("../media/streets.jpg");
-    height: 100rem;
-    background-size: cover;
-    background-position: center;
-    border: solid 1rem white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    -webkit-text-stroke: black .5rem;
-}
-
-.places-to-visit{
-    font-size: 12rem;
-    color: white;
-    @include phone{
-    margin: 0;
-    font-size: 5rem;
-    
-    }
-}
-.cancun{
-    background-image: url("../media/cancun.jpg");
-    background-size: cover;
-    height: 20rem;
-    width: 20rem;
-}
-
-.top-half-chichen-itza{
-    background-image: url("../media/top-half-chichen-itza.jpg");
-    background-size: cover;
-    height: 20rem;
-    width: 20rem;
 }
 

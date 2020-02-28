@@ -1,0 +1,63 @@
+@import "./variables";
+
+.streets{
+    background-image: url("../media/streets.jpg");
+    height: 100rem;
+    background-size: cover;
+    background-position: center;
+    border: solid 1rem white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    -webkit-text-stroke: black .5rem;
+    
+}
+
+.places-to-visit{
+    font-size: 12rem;
+    color: white;
+    @include phone{
+    margin: 0;
+    font-size: 5rem;
+    
+    }
+}
+
+.four-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 175rem;
+}
+.cancun{
+    background-image: url("../media/cancun.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    width: 40rem;
+}
+
+.top-half-chichen-itza{
+    background-image: url("../media/top-half-chichen-itza.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    width: 40rem;
+}
+
+.mexico-city{
+    background-image: url("../media/mexico-city.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    width: 40rem;
+}
+
+.playa-del-carmen{
+    background-image: url("../media/playa-del-carmen.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    width: 40rem;
+}
+
