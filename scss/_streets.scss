@@ -33,31 +33,49 @@
     background-image: url("../media/cancun.jpg");
     background-size: cover;
     background-position: center;
-    height: 50rem;
-    width: 40rem;
+    height: 45rem;
+    width: 34rem;
+    border: solid 1rem black;
 }
 
 .top-half-chichen-itza{
     background-image: url("../media/top-half-chichen-itza.jpg");
     background-size: cover;
     background-position: center;
-    height: 50rem;
-    width: 40rem;
+    height: 45rem;
+    width: 34rem;
+    border: solid 1rem black;
 }
 
 .mexico-city{
     background-image: url("../media/mexico-city.jpg");
     background-size: cover;
     background-position: center;
-    height: 50rem;
-    width: 40rem;
+    height: 45rem;
+    width: 34rem;
+    border: solid 1rem black;
 }
 
 .playa-del-carmen{
     background-image: url("../media/playa-del-carmen.jpg");
     background-size: cover;
     background-position: center;
-    height: 50rem;
-    width: 40rem;
+    height: 45rem;
+    width: 34rem;
+    border: solid 1rem black;
+}
+.image{
+    transition: all .3s;
+    outline-offset: .5rem;
+}
+.image:hover{
+    transform: scale(1.3);
+    border-radius: 2rem;
+    outline: 1rem solid black;
+    z-index: 2;
 }
 
+.four-images:hover .image:not(:hover){
+    transform: scale(0.9);
+    filter: grayscale(100%);
+}

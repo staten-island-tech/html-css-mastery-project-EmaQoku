@@ -78,7 +78,7 @@
   }
 }
 
-.two-beach-cards {
+.three-beach-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +91,7 @@
 }
 
 @media (max-width: 450px) {
-  .two-beach-cards {
+  .three-beach-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -257,6 +257,76 @@
           transform: rotateY(0deg);
 }
 
+.card3 {
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  position: relative;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50rem;
+}
+
+.card-side3 {
+  height: 40rem;
+  width: 40rem;
+  font-size: 15px;
+  color: white;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card-side-front3 {
+  background-image: url("../media/more-beaches.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border: groove 2rem white;
+}
+
+.card-side-back3 {
+  background-color: black;
+  font-size: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border: groove 2rem white;
+}
+
+@media (max-width: 450px) {
+  .card-side-back3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-side-back3 {
+    font-size: 4rem;
+  }
+}
+
+.card3:hover .card-side-front3 {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card3:hover .card-side-back3 {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
 .city {
   background-image: url("../media/city.jpg");
   height: 100rem;
@@ -396,32 +466,57 @@
   background-image: url("../media/cancun.jpg");
   background-size: cover;
   background-position: center;
-  height: 50rem;
-  width: 40rem;
+  height: 45rem;
+  width: 34rem;
+  border: solid 1rem black;
 }
 
 .top-half-chichen-itza {
   background-image: url("../media/top-half-chichen-itza.jpg");
   background-size: cover;
   background-position: center;
-  height: 50rem;
-  width: 40rem;
+  height: 45rem;
+  width: 34rem;
+  border: solid 1rem black;
 }
 
 .mexico-city {
   background-image: url("../media/mexico-city.jpg");
   background-size: cover;
   background-position: center;
-  height: 50rem;
-  width: 40rem;
+  height: 45rem;
+  width: 34rem;
+  border: solid 1rem black;
 }
 
 .playa-del-carmen {
   background-image: url("../media/playa-del-carmen.jpg");
   background-size: cover;
   background-position: center;
-  height: 50rem;
-  width: 40rem;
+  height: 45rem;
+  width: 34rem;
+  border: solid 1rem black;
+}
+
+.image {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  outline-offset: .5rem;
+}
+
+.image:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  border-radius: 2rem;
+  outline: 1rem solid black;
+  z-index: 2;
+}
+
+.four-images:hover .image:not(:hover) {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 html {
