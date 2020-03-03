@@ -434,10 +434,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-text-stroke: black .5rem;
 }
 
 .places-to-visit {
+  -webkit-text-stroke: black .5rem;
   font-size: 12rem;
   color: white;
 }
@@ -517,6 +517,12 @@
           transform: scale(0.9);
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+.cancun-text {
+  font-size: 3rem;
+  color: white;
+  z-index: 5;
 }
 
 html {

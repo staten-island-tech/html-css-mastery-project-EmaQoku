@@ -9,11 +9,12 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    -webkit-text-stroke: black .5rem;
+   
     
 }
 
 .places-to-visit{
+    -webkit-text-stroke: black .5rem;
     font-size: 12rem;
     color: white;
     @include phone{
@@ -78,4 +79,10 @@
 .four-images:hover .image:not(:hover){
     transform: scale(0.9);
     filter: grayscale(100%);
+}
+
+.cancun-text{
+    font-size: 3rem;
+    color: white;
+    z-index: 5;
 }
