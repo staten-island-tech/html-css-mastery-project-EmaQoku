@@ -74,7 +74,13 @@
 
 @media (max-width: 450px) {
   .beach-text {
-    font-size: 5rem;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .beach-text {
+    font-size: 9rem;
   }
 }
 
@@ -126,15 +132,15 @@
 
 @media (max-width: 768px) {
   .card-side {
-    height: 30rem;
-    width: 30rem;
+    height: 25rem;
+    width: 25rem;
   }
 }
 
 @media (max-width: 450px) {
   .card-side {
-    height: 25rem;
-    width: 25rem;
+    height: 20rem;
+    width: 20rem;
   }
 }
 
@@ -522,7 +528,6 @@
 .cancun-text {
   font-size: 3rem;
   color: white;
-  z-index: 5;
 }
 
 html {
