@@ -365,6 +365,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .city-life {
+    font-size: 9rem;
+  }
+}
+
 .city-text {
   font-size: 5rem;
   color: white;
@@ -455,6 +461,13 @@
   }
 }
 
+@media (max-width: 768px) {
+  .places-to-visit {
+    font-size: 9rem;
+    margin: 2rem;
+  }
+}
+
 .four-images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,6 +481,17 @@
   width: 175rem;
 }
 
+@media (max-width: 768px) {
+  .four-images {
+    width: 62rem;
+    height: 81rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .cancun {
   background-image: url("../media/cancun.jpg");
   background-size: cover;
@@ -475,6 +499,13 @@
   height: 45rem;
   width: 34rem;
   border: solid 1rem black;
+}
+
+@media (max-width: 768px) {
+  .cancun {
+    width: 60rem;
+    height: 16rem;
+  }
 }
 
 .top-half-chichen-itza {
@@ -486,6 +517,13 @@
   border: solid 1rem black;
 }
 
+@media (max-width: 768px) {
+  .top-half-chichen-itza {
+    width: 60rem;
+    height: 16rem;
+  }
+}
+
 .mexico-city {
   background-image: url("../media/mexico-city.jpg");
   background-size: cover;
@@ -495,6 +533,13 @@
   border: solid 1rem black;
 }
 
+@media (max-width: 768px) {
+  .mexico-city {
+    width: 60rem;
+    height: 16rem;
+  }
+}
+
 .playa-del-carmen {
   background-image: url("../media/playa-del-carmen.jpg");
   background-size: cover;
@@ -502,6 +547,13 @@
   height: 45rem;
   width: 34rem;
   border: solid 1rem black;
+}
+
+@media (max-width: 768px) {
+  .playa-del-carmen {
+    width: 60rem;
+    height: 16rem;
+  }
 }
 
 .image {

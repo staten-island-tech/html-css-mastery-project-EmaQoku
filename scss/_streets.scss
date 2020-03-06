@@ -20,7 +20,11 @@
     @include phone{
     margin: 0;
     font-size: 5rem;
-    
+    }
+
+    @include tablet{
+        font-size: 9rem;
+        margin: 2rem;
     }
 }
 
@@ -29,6 +33,11 @@
     flex-direction: row;
     justify-content: space-around;
     width: 175rem;
+    @include tablet{
+        width: 62rem;
+        height: 81rem;
+        flex-direction: column;
+    }
 }
 .cancun{
     background-image: url("../media/cancun.jpg");
@@ -37,6 +46,10 @@
     height: 45rem;
     width: 34rem;
     border: solid 1rem black;
+    @include tablet{
+        width: 60rem;
+        height: 16rem;
+    }
 }
 
 .top-half-chichen-itza{
@@ -46,6 +59,10 @@
     height: 45rem;
     width: 34rem;
     border: solid 1rem black;
+    @include tablet{
+        width: 60rem;
+        height: 16rem;
+    }
 }
 
 .mexico-city{
@@ -55,6 +72,10 @@
     height: 45rem;
     width: 34rem;
     border: solid 1rem black;
+    @include tablet{
+        width: 60rem;
+        height: 16rem;
+    }
 }
 
 .playa-del-carmen{
@@ -64,6 +85,10 @@
     height: 45rem;
     width: 34rem;
     border: solid 1rem black;
+    @include tablet{
+        width: 60rem;
+        height: 16rem;
+    }
 }
 .image{
     transition: all .3s;

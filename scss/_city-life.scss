@@ -18,7 +18,10 @@
     @include phone{
     margin: 0;
     font-size: 5rem;
-    
+    }
+
+    @include tablet{
+        font-size: 9rem;
     }
 }
 
