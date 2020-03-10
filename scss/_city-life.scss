@@ -38,7 +38,8 @@
        
     }
     @include tablet{
-       
+       font-size: 3rem;
+       width: 45rem;
     }
 }
 
@@ -49,6 +50,9 @@
     @include phone{
         width: 25rem;
         height: 30rem;
+    }
+    @include tablet{
+        width: 40rem;
     }
 }
 
@@ -63,5 +67,9 @@
        align-items: center;
        height: 100rem;
        width: 40rem;
+   }
+   @include tablet{
+       width: 85vw;
+       
    }
 }

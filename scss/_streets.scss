@@ -99,6 +99,10 @@
     border-radius: 2rem;
     outline: 1rem solid black;
     z-index: 2;
+
+    @include tablet{
+        transform: scale(1);
+    }
 }
 
 .four-images:hover .image:not(:hover){

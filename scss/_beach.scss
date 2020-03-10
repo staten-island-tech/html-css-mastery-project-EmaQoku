@@ -7,8 +7,9 @@
     height: 100rem;
     border: solid 1rem white;
     align-content: center;
+ 
    
-    
+
 }
 .beach-text{
     font-size: 12rem;
@@ -18,10 +19,11 @@
     text-align: center;
     -webkit-text-stroke: black .5rem;
     @include phone{
-        font-size: 4rem;
+        font-size: 7rem;
     }
     @include tablet{
         font-size: 9rem;
+        margin: 4rem
     }
 }
 
@@ -53,8 +55,9 @@
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
     @include tablet {
-        height: 25rem;
-        width: 25rem;
+        height: 36rem;
+        width: 18rem;
+        
 
      }
  
@@ -92,7 +95,7 @@
         font-size: 2rem;
     }
     @include tablet{
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 .card:hover .card-side-front{
@@ -144,7 +147,7 @@
         font-size: 2rem;
     }
     @include tablet{
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 .card2:hover .card-side-front2{
@@ -195,7 +198,7 @@
         font-size: 2rem;
     }
     @include tablet{
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 .card3:hover .card-side-front3{

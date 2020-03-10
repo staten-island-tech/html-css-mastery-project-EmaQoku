@@ -28,7 +28,7 @@
 
 @media (max-width: 450px) {
   .welcome {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 }
 
@@ -74,13 +74,14 @@
 
 @media (max-width: 450px) {
   .beach-text {
-    font-size: 4rem;
+    font-size: 7rem;
   }
 }
 
 @media (max-width: 768px) {
   .beach-text {
     font-size: 9rem;
+    margin: 4rem;
   }
 }
 
@@ -132,8 +133,8 @@
 
 @media (max-width: 768px) {
   .card-side {
-    height: 25rem;
-    width: 25rem;
+    height: 36rem;
+    width: 18rem;
   }
 }
 
@@ -179,7 +180,7 @@
 
 @media (max-width: 768px) {
   .card-side-back {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -249,7 +250,7 @@
 
 @media (max-width: 768px) {
   .card-side-back2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -319,7 +320,7 @@
 
 @media (max-width: 768px) {
   .card-side-back3 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -387,6 +388,13 @@
   }
 }
 
+@media (max-width: 768px) {
+  .city-text {
+    font-size: 3rem;
+    width: 45rem;
+  }
+}
+
 .overhead-city {
   background-image: url("../media/overhead-city.jpg");
   height: 61rem;
@@ -398,6 +406,12 @@
   .overhead-city {
     width: 25rem;
     height: 30rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .overhead-city {
+    width: 40rem;
   }
 }
 
@@ -427,6 +441,12 @@
             align-items: center;
     height: 100rem;
     width: 40rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .city-content {
+    width: 85vw;
   }
 }
 
@@ -568,6 +588,13 @@
   border-radius: 2rem;
   outline: 1rem solid black;
   z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .image:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .four-images:hover .image:not(:hover) {
