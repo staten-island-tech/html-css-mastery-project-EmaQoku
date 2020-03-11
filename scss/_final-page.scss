@@ -1,0 +1,96 @@
+@import "./variables";
+
+.final-page{
+    background-image: url("../media/town.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100rem;
+    border: solid 1rem white;
+    align-content: center;
+    
+}
+
+.hope{
+    height: 10rem;
+    font-size: 12rem;
+    text-align: center;
+}
+
+  
+  .button-sect{
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .button {
+    display: inline-block;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 30vh;
+    width: 50vw;
+    box-shadow: 0 18px #999;
+    border-radius: 10rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .button:active {
+    box-shadow: 0 10px #666;
+    transform: translateY(8px);
+  }
+  
+  .button::after {
+    display: none;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    top: 50%;
+    left: 50%;
+  
+    animation: ripple 0.75s;
+    opacity: 0;
+  }
+  .button:focus:not(:active)::after {
+    display: block;
+  }
+  
+  @keyframes ripple {
+    from {
+      opacity: 0.25;
+      transform: scale(0);
+    }
+    to {
+      opacity: 0;
+      transform: scale(10);
+    }
+  }
+  
+  .flights{
+    background-image: url(https://images.unsplash.com/photo-1539201299177-2af0fae3d77f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-position: center;
+    background-size: cover;
+    left: 10vw;
+  }
+  
+  .hotels{
+    background-image: url(https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+    background-position: center;
+    background-size: cover;
+    left: 25vw;
+  }
+  
+  .cars{
+    background-image: url(https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    background-position: center;
+    background-size: cover;
+    left: 40vw;
+  }
+  
