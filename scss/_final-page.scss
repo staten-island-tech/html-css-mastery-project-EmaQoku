@@ -14,30 +14,42 @@
     height: 10rem;
     font-size: 12rem;
     text-align: center;
+    margin: 10rem;
+
+    @include tablet{
+      font-size: 9rem;
+      margin: 0rem;
+    }
 }
 
   
   .button-sect{
     height: 80rem;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
+
+    @include tablet{
+      height: 70rem;
+    }
   }
   
   .button {
     display: inline-block;
     flex-direction: column;
     box-sizing: border-box;
-    height: 30vh;
-    width: 50vw;
-    box-shadow: 0 18px #999;
+    height: 65vh;
+    width: 25vw;
     border-radius: 10rem;
     position: relative;
     overflow: hidden;
+    border: solid 1rem black;
+
+    @include tablet{
+      height: 30vh;
+    }
   }
   
   .button:active {
-    box-shadow: 0 10px #666;
     transform: translateY(8px);
   }
   
@@ -74,23 +86,20 @@
   }
   
   .flights{
-    background-image: url(https://images.unsplash.com/photo-1539201299177-2af0fae3d77f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-image: url("../media/plane.jpg");
     background-position: center;
     background-size: cover;
-    left: 10vw;
   }
   
   .hotels{
-    background-image: url(https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+    background-image: url("../media/hotels.jpg");
     background-position: center;
     background-size: cover;
-    left: 25vw;
   }
   
   .cars{
-    background-image: url(https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    background-image: url("../media/cars.jpg");
     background-position: center;
     background-size: cover;
-    left: 40vw;
   }
   

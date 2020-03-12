@@ -47,6 +47,7 @@
     background-image: url("../media/overhead-city.jpg");height: 61rem;
     width: 50rem;
     background-size: cover;
+    border:solid 1rem black;
     @include phone{
         width: 25rem;
         height: 30rem;
