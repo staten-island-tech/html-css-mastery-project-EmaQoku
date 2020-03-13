@@ -413,6 +413,7 @@
 @media (max-width: 768px) {
   .overhead-city {
     width: 40rem;
+    height: 65rem;
   }
 }
 
@@ -631,11 +632,12 @@
   .hope {
     font-size: 9rem;
     margin: 0rem;
+    height: 25rem;
   }
 }
 
 .button-sect {
-  height: 80rem;
+  height: 70rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,7 +648,11 @@
 
 @media (max-width: 768px) {
   .button-sect {
-    height: 70rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 89rem;
   }
 }
 
@@ -668,7 +674,8 @@
 
 @media (max-width: 768px) {
   .button {
-    height: 30vh;
+    height: 33vh;
+    width: 35rem;
   }
 }
 
@@ -730,16 +737,37 @@
   background-size: cover;
 }
 
+@media (max-width: 768px) {
+  .flights {
+    left: 1rem;
+    top: -2rem;
+  }
+}
+
 .hotels {
   background-image: url("../media/hotels.jpg");
   background-position: center;
   background-size: cover;
 }
 
+@media (max-width: 768px) {
+  .hotels {
+    left: 34rem;
+    top: -9rem;
+  }
+}
+
 .cars {
   background-image: url("../media/cars.jpg");
   background-position: center;
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .cars {
+    left: 1rem;
+    top: -16rem;
+  }
 }
 
 html {

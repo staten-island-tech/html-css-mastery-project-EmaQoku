@@ -19,17 +19,19 @@
     @include tablet{
       font-size: 9rem;
       margin: 0rem;
+      height: 25rem;
     }
 }
 
   
   .button-sect{
-    height: 80rem;
+    height: 70rem;
     display: flex;
     justify-content: space-evenly;
 
     @include tablet{
-      height: 70rem;
+      flex-direction: column;
+      height: 89rem;
     }
   }
   
@@ -45,7 +47,8 @@
     border: solid 1rem black;
 
     @include tablet{
-      height: 30vh;
+      height: 33vh;
+      width: 35rem;
     }
   }
   
@@ -89,17 +92,31 @@
     background-image: url("../media/plane.jpg");
     background-position: center;
     background-size: cover;
+    @include tablet{
+      left: 1rem;
+      top: -2rem;
+    }
   }
   
   .hotels{
     background-image: url("../media/hotels.jpg");
     background-position: center;
     background-size: cover;
+
+    @include tablet{
+      left: 34rem;
+      top: -9rem;
+    }
   }
   
   .cars{
     background-image: url("../media/cars.jpg");
     background-position: center;
     background-size: cover;
+
+    @include tablet{
+      left: 1rem;
+      top: -16rem;
+    }
   }
   
