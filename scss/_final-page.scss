@@ -11,27 +11,37 @@
 }
 
 .hope{
-    height: 10rem;
+    height: 25rem;
     font-size: 12rem;
     text-align: center;
     margin: 10rem;
+    -webkit-text-stroke: black .5rem;
+    color: white;
 
     @include tablet{
-      font-size: 9rem;
+      font-size: 8.7rem;
       margin: 0rem;
-      height: 25rem;
+      height: 30rem;
+    }
+    @include phone{
+      font-size: 7rem;
+      height: 28rem;
     }
 }
 
   
   .button-sect{
-    height: 70rem;
+    height: 55rem;
     display: flex;
     justify-content: space-evenly;
 
     @include tablet{
       flex-direction: column;
-      height: 89rem;
+      height: 73rem;
+    }
+    @include phone{
+      height: 70rem;
+      align-items: center;
     }
   }
   
@@ -39,7 +49,7 @@
     display: inline-block;
     flex-direction: column;
     box-sizing: border-box;
-    height: 65vh;
+    height: 50rem;
     width: 25vw;
     border-radius: 10rem;
     position: relative;
@@ -48,7 +58,12 @@
 
     @include tablet{
       height: 33vh;
-      width: 35rem;
+      width: 30rem;
+    }
+
+    @include phone{
+      height: 21vh;
+      width: 28rem;
     }
   }
   
@@ -93,8 +108,13 @@
     background-position: center;
     background-size: cover;
     @include tablet{
-      left: 1rem;
-      top: -2rem;
+      left: 4rem;
+      top: -4rem;
+    }
+
+    @include phone{
+      left: 0rem;
+      top: 0rem;
     }
   }
   
@@ -104,8 +124,12 @@
     background-size: cover;
 
     @include tablet{
-      left: 34rem;
-      top: -9rem;
+      left: 36rem;
+      top: -6rem;
+    }
+    @include phone{
+      left: 0rem;
+      top: 0rem;
     }
   }
   
@@ -115,8 +139,12 @@
     background-size: cover;
 
     @include tablet{
-      left: 1rem;
-      top: -16rem;
+      left: 4rem;
+      top: -8rem;
+    }
+    @include phone{
+      left: 0rem;
+      top: 0rem;
     }
   }
   

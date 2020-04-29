@@ -33,20 +33,16 @@
 }
 
 .book {
-  font-size: 8rem;
+  font-size: 11rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.book-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  color: white;
-  font-family: 'Luckiest Guy', cursive;
+@media (max-width: 450px) {
+  .book {
+    font-size: 6rem;
+  }
 }
 
 .beach {
@@ -55,8 +51,6 @@
   background-position: center;
   height: 100rem;
   border: solid 1rem white;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .beach-text {
@@ -69,19 +63,21 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin: 4rem;
   -webkit-text-stroke: black .5rem;
-}
-
-@media (max-width: 450px) {
-  .beach-text {
-    font-size: 7rem;
-  }
 }
 
 @media (max-width: 768px) {
   .beach-text {
     font-size: 9rem;
     margin: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .beach-text {
+    font-size: 7rem;
+    margin: 0rem;
   }
 }
 
@@ -93,8 +89,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  width: 134rem;
+}
+
+@media (max-width: 768px) {
+  .three-beach-cards {
+    width: 70rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -106,7 +107,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 35rem;
+    height: 50rem;
   }
 }
 
@@ -120,9 +121,15 @@
   width: 50rem;
 }
 
+@media (max-width: 450px) {
+  .card {
+    right: 9.4rem;
+  }
+}
+
 .card-side {
-  height: 40rem;
-  width: 40rem;
+  height: 35rem;
+  width: 35rem;
   font-size: 3rem;
   color: white;
   -webkit-backface-visibility: hidden;
@@ -140,7 +147,7 @@
 
 @media (max-width: 450px) {
   .card-side {
-    height: 20rem;
+    height: 15rem;
     width: 20rem;
   }
 }
@@ -158,9 +165,16 @@
   border: groove 2rem white;
 }
 
+@media (max-width: 450px) {
+  .card-side-front {
+    left: 4rem;
+  }
+}
+
 .card-side-back {
   background-color: black;
-  font-size: 5rem;
+  font-size: 2.5rem;
+  text-align: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -174,13 +188,8 @@
 
 @media (max-width: 450px) {
   .card-side-back {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .card-side-back {
-    font-size: 3rem;
+    font-size: 1.7rem;
+    left: 4rem;
   }
 }
 
@@ -202,6 +211,12 @@
   margin-left: auto;
   margin-right: auto;
   width: 50rem;
+}
+
+@media (max-width: 450px) {
+  .card2 {
+    right: 9.4rem;
+  }
 }
 
 .card-side2 {
@@ -228,9 +243,16 @@
   border: groove 2rem white;
 }
 
+@media (max-width: 450px) {
+  .card-side-front2 {
+    left: 4rem;
+  }
+}
+
 .card-side-back2 {
   background-color: black;
-  font-size: 5rem;
+  font-size: 2.5rem;
+  text-align: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -242,15 +264,16 @@
   border: groove 2rem white;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .card-side-back2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .card-side-back2 {
-    font-size: 3rem;
+    font-size: 1.3rem;
+    left: 4rem;
   }
 }
 
@@ -272,6 +295,12 @@
   margin-left: auto;
   margin-right: auto;
   width: 50rem;
+}
+
+@media (max-width: 450px) {
+  .card3 {
+    right: 9.4rem;
+  }
 }
 
 .card-side3 {
@@ -298,9 +327,16 @@
   border: groove 2rem white;
 }
 
+@media (max-width: 450px) {
+  .card-side-front3 {
+    left: 4rem;
+  }
+}
+
 .card-side-back3 {
   background-color: black;
-  font-size: 5rem;
+  font-size: 2.5rem;
+  text-align: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -312,15 +348,16 @@
   border: groove 2rem white;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .card-side-back3 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .card-side-back3 {
-    font-size: 3rem;
+    font-size: 1.3rem;
+    left: 4rem;
   }
 }
 
@@ -334,122 +371,187 @@
           transform: rotateY(0deg);
 }
 
-.city {
-  background-image: url("../media/city.jpg");
-  height: 100rem;
+.resort {
+  background-image: url("../media/PalmTrees.jpg");
   background-size: cover;
   background-position: center;
+  height: 100rem;
   border: solid 1rem white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.city-life {
+.resort-text {
   font-size: 12rem;
   color: white;
   -webkit-text-stroke: black .5rem;
-  margin: 5rem;
-}
-
-@media (max-width: 450px) {
-  .city-life {
-    margin: 0;
-    font-size: 5rem;
-  }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem;
 }
 
 @media (max-width: 768px) {
-  .city-life {
+  .resort-text {
     font-size: 9rem;
   }
 }
 
-.city-text {
-  font-size: 5rem;
-  color: white;
-  background-color: black;
-  width: 90rem;
-  margin: 0;
-}
-
 @media (max-width: 450px) {
-  .city-text {
-    width: 33rem;
-    font-size: 2.5rem;
-    text-align: center;
+  .resort-text {
+    font-size: 7rem;
   }
 }
 
-@media (max-width: 768px) {
-  .city-text {
-    font-size: 3rem;
-    width: 45rem;
-  }
-}
-
-.overhead-city {
-  background-image: url("../media/overhead-city.jpg");
-  height: 61rem;
-  width: 50rem;
-  background-size: cover;
-  border: solid 1rem black;
-}
-
-@media (max-width: 450px) {
-  .overhead-city {
-    width: 25rem;
-    height: 30rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .overhead-city {
-    width: 40rem;
-    height: 65rem;
-  }
-}
-
-.city-content {
+.resorts {
+  width: 128rem;
+  height: 78rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 150rem;
-}
-
-@media (max-width: 450px) {
-  .city-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100rem;
-    width: 40rem;
-  }
+  position: absolute;
 }
 
 @media (max-width: 768px) {
-  .city-content {
-    width: 85vw;
+  .resorts {
+    left: 14.5rem;
   }
+}
+
+@media (max-width: 450px) {
+  .resorts {
+    left: 9rem;
+  }
+}
+
+.resort-one {
+  background-image: url("../media/GrandVelas.jpg");
+  background-size: cover;
+  height: 22rem;
+  width: 45rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 5rem;
+  border: white solid 1rem;
+  border-radius: 5rem;
+  font-size: 2.8rem;
+  color: transparent;
+  text-align: center;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+@media (max-width: 768px) {
+  .resort-one {
+    left: 0;
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .resort-one {
+    height: 18rem;
+    width: 18rem;
+    font-size: 1.6rem;
+  }
+}
+
+.resort-one:hover {
+  background-color: black;
+  background-image: none;
+  color: white;
+}
+
+.resort-two {
+  background-image: url("../media/xcaret.jpg");
+  background-size: cover;
+  height: 22rem;
+  width: 45rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 40rem;
+  border: white solid 1rem;
+  border-radius: 5rem;
+  font-size: 2.8rem;
+  color: transparent;
+  text-align: center;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+@media (max-width: 768px) {
+  .resort-two {
+    left: 0;
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .resort-two {
+    height: 18rem;
+    width: 18rem;
+    font-size: 1.6rem;
+  }
+}
+
+.resort-two:hover {
+  background-color: black;
+  background-image: none;
+  color: white;
+}
+
+.resort-three {
+  background-image: url("../media/MajesticElegance.jpg");
+  background-size: cover;
+  height: 22rem;
+  width: 45rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 75rem;
+  border: white solid 1rem;
+  border-radius: 5rem;
+  font-size: 2.8rem;
+  color: transparent;
+  text-align: center;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+@media (max-width: 768px) {
+  .resort-three {
+    left: 0;
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .resort-three {
+    height: 18rem;
+    width: 18rem;
+    font-size: 1.6rem;
+  }
+}
+
+.resort-three:hover {
+  background-color: black;
+  background-image: none;
+  color: white;
 }
 
 .streets {
@@ -474,19 +576,20 @@
   -webkit-text-stroke: black .5rem;
   font-size: 12rem;
   color: white;
-}
-
-@media (max-width: 450px) {
-  .places-to-visit {
-    margin: 0;
-    font-size: 5rem;
-  }
+  text-align: center;
 }
 
 @media (max-width: 768px) {
   .places-to-visit {
     font-size: 9rem;
     margin: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .places-to-visit {
+    margin: 0;
+    font-size: 7rem;
   }
 }
 
@@ -500,7 +603,7 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 175rem;
+  width: 122rem;
 }
 
 @media (max-width: 768px) {
@@ -514,81 +617,90 @@
   }
 }
 
+@media (max-width: 450px) {
+  .four-images {
+    width: 29rem;
+    height: 77rem;
+  }
+}
+
 .cancun {
   background-image: url("../media/cancun.jpg");
   background-size: cover;
   background-position: center;
-  height: 45rem;
-  width: 34rem;
-  border: solid 1rem black;
-}
-
-@media (max-width: 768px) {
-  .cancun {
-    width: 60rem;
-    height: 16rem;
-  }
+  height: 43rem;
+  width: 26rem;
+  border: solid .5rem black;
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+  -webkit-text-stroke: black .3rem;
 }
 
 .top-half-chichen-itza {
   background-image: url("../media/top-half-chichen-itza.jpg");
   background-size: cover;
   background-position: center;
-  height: 45rem;
-  width: 34rem;
-  border: solid 1rem black;
-}
-
-@media (max-width: 768px) {
-  .top-half-chichen-itza {
-    width: 60rem;
-    height: 16rem;
-  }
+  height: 43rem;
+  width: 26rem;
+  border: solid .5rem black;
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+  -webkit-text-stroke: black .3rem;
 }
 
 .mexico-city {
   background-image: url("../media/mexico-city.jpg");
   background-size: cover;
   background-position: center;
-  height: 45rem;
-  width: 34rem;
-  border: solid 1rem black;
-}
-
-@media (max-width: 768px) {
-  .mexico-city {
-    width: 60rem;
-    height: 16rem;
-  }
+  height: 43rem;
+  width: 26rem;
+  border: solid .5rem black;
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+  -webkit-text-stroke: black .3rem;
 }
 
 .playa-del-carmen {
   background-image: url("../media/playa-del-carmen.jpg");
   background-size: cover;
   background-position: center;
-  height: 45rem;
-  width: 34rem;
-  border: solid 1rem black;
-}
-
-@media (max-width: 768px) {
-  .playa-del-carmen {
-    width: 60rem;
-    height: 16rem;
-  }
+  height: 43rem;
+  width: 26rem;
+  border: solid .5rem black;
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+  -webkit-text-stroke: black .3rem;
 }
 
 .image {
   -webkit-transition: all .3s;
   transition: all .3s;
-  outline-offset: .5rem;
+  outline-offset: .3rem;
+}
+
+@media (max-width: 768px) {
+  .image {
+    width: 60rem;
+    height: 16rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .image {
+    width: 27rem;
+    height: 13rem;
+  }
 }
 
 .image:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   border-radius: 2rem;
-  outline: 1rem solid black;
+  outline: .5rem solid black;
   z-index: 2;
 }
 
@@ -622,22 +734,31 @@
 }
 
 .hope {
-  height: 10rem;
+  height: 25rem;
   font-size: 12rem;
   text-align: center;
   margin: 10rem;
+  -webkit-text-stroke: black .5rem;
+  color: white;
 }
 
 @media (max-width: 768px) {
   .hope {
-    font-size: 9rem;
+    font-size: 8.7rem;
     margin: 0rem;
-    height: 25rem;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .hope {
+    font-size: 7rem;
+    height: 28rem;
   }
 }
 
 .button-sect {
-  height: 70rem;
+  height: 55rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -652,7 +773,16 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 89rem;
+    height: 73rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .button-sect {
+    height: 70rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -664,7 +794,7 @@
           flex-direction: column;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 65vh;
+  height: 50rem;
   width: 25vw;
   border-radius: 10rem;
   position: relative;
@@ -675,7 +805,14 @@
 @media (max-width: 768px) {
   .button {
     height: 33vh;
-    width: 35rem;
+    width: 30rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .button {
+    height: 21vh;
+    width: 28rem;
   }
 }
 
@@ -739,8 +876,15 @@
 
 @media (max-width: 768px) {
   .flights {
-    left: 1rem;
-    top: -2rem;
+    left: 4rem;
+    top: -4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .flights {
+    left: 0rem;
+    top: 0rem;
   }
 }
 
@@ -752,8 +896,15 @@
 
 @media (max-width: 768px) {
   .hotels {
-    left: 34rem;
-    top: -9rem;
+    left: 36rem;
+    top: -6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .hotels {
+    left: 0rem;
+    top: 0rem;
   }
 }
 
@@ -765,8 +916,15 @@
 
 @media (max-width: 768px) {
   .cars {
-    left: 1rem;
-    top: -16rem;
+    left: 4rem;
+    top: -8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .cars {
+    left: 0rem;
+    top: 0rem;
   }
 }
 
